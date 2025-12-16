@@ -44,12 +44,12 @@ def run_fuzzification(df):
     """Mengubah data mentah menjadi nilai Fuzzy (skor 1-5) sesuai tabel sub-kriteria gambar"""
     df_fuzzy = df.copy()
     
-    # Logika C1: Harga Bulanan (Cost)
+    # Logika C1: Harga Bulanan (Benefit)
     def fuzz_c1(val):
-        if val <= 10000: return 5
-        elif val <= 20000: return 4
-        elif val <= 40000: return 3
-        elif val <= 80000: return 2
+        if val > 10000: return 5
+        elif val > 20000: return 4
+        elif val > 40000: return 3
+        elif val > 80000: return 2
         else: return 1
 
     # Logika C2: Kapasitas Penyimpanan (Benefit)
