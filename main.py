@@ -46,10 +46,10 @@ def run_fuzzification(df):
     
     # Logika C1: Harga Bulanan (Benefit)
     def fuzz_c1(val):
-        if val > 10000: return 5
-        elif val > 20000: return 4
-        elif val > 40000: return 3
-        elif val > 80000: return 2
+        if 0 <= val <= 10000: return 5
+        elif val <= 20000: return 4
+        elif val <= 40000: return 3
+        elif val <= 80000: return 2
         else: return 1
 
     # Logika C2: Kapasitas Penyimpanan (Benefit)
