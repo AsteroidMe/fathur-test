@@ -15,7 +15,7 @@ Sistem ini dibangun untuk mengimplementasikan dan membandingkan dua metode **Mul
 # --- 1. DEFINISI KRITERIA & BOBOT ---
 # Bobot ini tetap merupakan bobot kepentingan relatif antar kriteria (0-1).
 CRITERIA_CONFIG = {
-    "C1": {"name": "Harga Bulanan (C1)", "weight": 0.3, "attr": "cost"}, # C1 adalah kriteria biaya (cost)
+    "C1": {"name": "Harga Bulanan (C1)", "weight": 0.3, "attr": "benefit"}, # C1 adalah kriteria biaya (cost)
     "C2": {"name": "Kapasitas Penyimpanan (C2)", "weight": 0.2, "attr": "benefit"},
     "C3": {"name": "Bandwidth (C3)", "weight": 0.2, "attr": "benefit"},
     "C4": {"name": "Uptime (C4)", "weight": 0.15, "attr": "benefit"},
